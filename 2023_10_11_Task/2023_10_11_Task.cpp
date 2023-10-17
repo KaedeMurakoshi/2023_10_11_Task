@@ -5,46 +5,46 @@
 using namespace std;
 
 // Q.1 画面上に自分の今年のお年玉をもらった金額を円マーク表記で表示するプログラム
-//int main()
-//{
-//    int money = 0;
-//    cout << "いくらもらいましたか？ > " << flush;
-//    cin >> money;
-//    cout << endl;
-//    printf("%d\\", money);    
-//}
+int main()
+{
+    int money = 0;
+    cout << "いくらもらいましたか？ > " << flush;
+    cin >> money;
+    cout << endl;
+    printf("\\%d", money); // バックスラッシュと\は同じ
+}
 
 // Q.6 入力した人数分だけテストの点数を記録し、その平均点を求めるプログラム
 
-int main()
-{
-    int* scoreArray;
-    int size = 0;
-    float sumScore = 0;
-
-    cout << "人数を入力 > " << flush;
-    cin >> size;
-
-    scoreArray = new int[size];
-
-    for (int i = 0; i < size; ++i)
-    {
-        printf("%d番目の生徒の点数を入力 > ", i);
-        cin >> scoreArray[i];
-        sumScore += scoreArray[i];
-    }
-
-    float averageScore = sumScore / size;
-
-    printf("平均点は%.1lf点です。", averageScore);
-
-    // 解放
-    if (scoreArray != NULL)
-    {
-        delete[] scoreArray;
-        scoreArray = NULL;
-    }
-}
+//int main()
+//{
+//    int* scoreArray;
+//    int size = 0;
+//    float sumScore = 0;
+//
+//    cout << "人数を入力 > " << flush;
+//    cin >> size;
+//
+//    scoreArray = new int[size];
+//
+//    for (int i = 0; i < size; ++i)
+//    {
+//        printf("%d番目の生徒の点数を入力 > ", i);
+//        cin >> scoreArray[i];
+//        sumScore += scoreArray[i];
+//    }
+//
+//    float averageScore = sumScore / size;
+//
+//    printf("平均点は%.1lf点です。", averageScore);
+//
+//    // 解放
+//    if (scoreArray != NULL)
+//    {
+//        delete[] scoreArray;
+//        scoreArray = NULL;
+//    }
+//}
 
 // プログラムの実行: Ctrl + F5 または [デバッグ] > [デバッグなしで開始] メニュー
 // プログラムのデバッグ: F5 または [デバッグ] > [デバッグの開始] メニュー
