@@ -39,11 +39,8 @@ int main()
         float averageScore = sumScore / size;
 
         printf("平均点は%.1lf点です。", averageScore);
-    }
-    
-    // 解放
-    if (scoreArray != NULL)
-    {
+
+        // 解放
         delete[] scoreArray;
         scoreArray = NULL;
     }
