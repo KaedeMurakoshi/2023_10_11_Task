@@ -31,7 +31,7 @@ int main()
     {
         for (int i = 0; i < size; ++i)
         {
-            printf("%d番目の生徒の点数を入力 > ", i);
+            printf("%d番目の生徒の点数を入力 > ", i + 1);
             cin >> scoreArray[i];
             sumScore += scoreArray[i];
         }
